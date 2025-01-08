@@ -2,7 +2,12 @@ import { importSheet } from 'jsr:@psych/sheet'
 import ical from 'jsr:@sebbo2002/ical-generator'
 import { parseArgs } from 'jsr:@std/cli/parse-args'
 
-async function generateICS(csvFilePath: string, icsFilePath: string, calendarName: string) {
+async function generateICS(
+    csvFilePath: string,
+    icsFilePath: string,
+    calendarName: string,
+    alarmBeforeHours: number
+) {
     const file = await Deno.readFile(csvFilePath)
     const csv = await importSheet(file, 'csv')
 
@@ -25,7 +30,7 @@ async function generateICS(csvFilePath: string, icsFilePath: string, calendarNam
                     summary: title,
                     description: description,
                 })
-                .createAlarm({ trigger: 60 * 60 * 6 })
+                .createAlarm({ trigger: 60 * 60 * alarmBeforeHours })
         } catch (error) {
             const err = error as Error
             console.log(err.message, title, startDate)
@@ -37,12 +42,13 @@ async function generateICS(csvFilePath: string, icsFilePath: string, calendarNam
 }
 
 const args = parseArgs(Deno.args, {
-    string: ['calendar'],
+    string: ['calendar', 'alarmBeforeHours'],
     alias: { c: 'calendar' },
-    default: { calendar: 'Calendar' },
+    default: { calendar: 'Calendar', alarmBeforeHours: '1' },
 })
 
 const csvFilePath = (args._[0] as string) || 'events.csv'
 const csvFileName = csvFilePath.split('.').slice(0, -1).join('.')
 const icsFilePath = `${csvFileName}.ics`
-await generateICS(csvFilePath, icsFilePath, args.calendar)
+const alarmBeforeHours = Number(args.alarmBeforeHours)
+await generateICS(csvFilePath, icsFilePath, args.calendar, alarmBeforeHours)
