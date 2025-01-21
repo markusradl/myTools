@@ -2,8 +2,8 @@
 
 async function readAndConvertZPL(filePath: string) {
     const content = await Deno.readTextFile(filePath)
-    const flattenedString = content.replace(/\n/g, '$N') // Siemens strings uses two chars for newline (String Length!!)
-    const templateString = flattenedString.replace(/\$/g, '$$$$') // Siemens strings escapes $ with $$
+    const flattenedString = content.replace(/\n/g, '') // CR not needed
+    const templateString = content.replace(/\$/g, '$$$$').replace(/\n/g, '') // Siemens strings escapes $ with $$. CR not needed ($N is used for new line)
 
     // Search for occurrences of ${x} where x is 1 to 9 and write the indices into a new array
     const regex = /\$\{([0-9])\}/g
@@ -30,7 +30,7 @@ async function readAndConvertZPL(filePath: string) {
         VERSION : 0.1
         NON_RETAIN
         VAR 
-            TemplateString : WString;
+            TemplateString : WString[1000];
             PlaceHolders : Array[0..${placeHolders.length - 1}] of Struct
                 Id : Int;   // Placeholder ID (0..9)
                 Position : Int;   // Startposition in template string

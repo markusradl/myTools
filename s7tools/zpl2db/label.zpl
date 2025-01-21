@@ -1,14 +1,25 @@
 ^XA
-^FX https://labelary.com/viewer.html
-^FX --- Text 1
-^FO10,10
-^A0,40
+^BY2,3,80
+^FX*Auftrag
+^FO420,200
+^A0R,75
 ^FD${0}^FS
-
-^FX --- Barcode
-^BY5,2,270
-^FO50,150
-^BC
-^FD${1}^FS
-
+^FO420,1000
+^BCR,,N
+^FD${0}^FS
+^FX*Anzahl
+^FO320,200
+^A0R,50
+^FD${1} Stk^FS
+^FX*Datum
+^FO320,1000
+^A0R,45
+^FD${2}^FS
+^FX*Type
+^FO120,200
+^A0R,45
+^FD${3} FDR-1100J^FS
+^FO120,1000
+^BCR,,N
+^FD${3}^FS
 ^XZ

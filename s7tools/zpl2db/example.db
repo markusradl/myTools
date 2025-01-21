@@ -1,0 +1,22 @@
+
+        DATA_BLOCK "LabelData"
+        { S7_Optimized_Access := 'TRUE' }
+        VERSION : 0.1
+        NON_RETAIN
+        VAR 
+            TemplateString : WString;
+            PlaceHolders : Array[0..1] of Struct
+                Id : Int;   // Placeholder ID (0..9)
+                Position : Int;   // Startposition in Label String
+            END_STRUCT;
+        END_VAR
+
+        BEGIN
+            TemplateString := WSTRING#'^XA$$N^FX https://labelary.com/viewer.html$$N^FX --- Text 1$$N^FO10,10$$N^A0,40$$N^FD$${0}^FS$$N$$N^FX --- Barcode$$N^BY5,2,270$$N^FO50,150$$N^BC$$N^FD$${1}^FS$$N$$N^XZ';
+            
+            PlaceHolders[0].Id := 0;
+            PlaceHolders[0].Position := 80;
+
+            PlaceHolders[1].Id := 1;
+            PlaceHolders[1].Position := 139;
+        END_DATA_BLOCK
