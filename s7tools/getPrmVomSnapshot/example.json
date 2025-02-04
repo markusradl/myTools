@@ -1,0 +1,289 @@
+{
+    "@version": "1.0",
+    "@encoding": "utf-8",
+    "Document": {
+        "Engineering": {
+            "@version": "V19"
+        },
+        "DocumentInfo": {
+            "Created": "2025-02-04T20:10:44.7547198Z",
+            "ExportSetting": "WithReadOnly",
+            "InstalledProducts": {
+                "Product": [
+                    {
+                        "DisplayName": "Totally Integrated Automation Portal",
+                        "DisplayVersion": "V19 Update 3"
+                    },
+                    {
+                        "DisplayName": "SINAMICS Startdrive Advanced",
+                        "DisplayVersion": "V19"
+                    },
+                    {
+                        "DisplayName": "STEP 7 Professional",
+                        "DisplayVersion": "V19 Update 3"
+                    },
+                    {
+                        "DisplayName": "WinCC Basic/Comfort/Advanced",
+                        "DisplayVersion": "V19 Update 3"
+                    }
+                ],
+                "OptionPackage": [
+                    {
+                        "DisplayName": "TIA Portal Openness",
+                        "DisplayVersion": "V19 Update 3"
+                    },
+                    {
+                        "DisplayName": "TIA Portal Version Control Interface",
+                        "DisplayVersion": "V19 Update 3"
+                    },
+                    {
+                        "DisplayName": "SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, G220, S200, S210",
+                        "DisplayVersion": "V19"
+                    },
+                    {
+                        "DisplayName": "SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D",
+                        "DisplayVersion": "V19"
+                    },
+                    {
+                        "DisplayName": "STEP 7 Safety",
+                        "DisplayVersion": "V19 Update 1"
+                    }
+                ]
+            }
+        },
+        "SW.Blocks.InterfaceSnapshot": {
+            "@ID": "0",
+            "AttributeList": {
+                "Name": "Bauteil.IDB",
+                "Snapshot": {
+                    "@ReadOnly": "true",
+                    "SnapshotValues": {
+                        "@xmlns": "http://www.siemens.com/automation/Openness/SW/Interface/Snapshot/v1",
+                        "Value": [
+                            {
+                                "@Path": "",
+                                "@Type": "Section"
+                            },
+                            {
+                                "@Path": "",
+                                "@Type": "Section"
+                            },
+                            {
+                                "@Path": "",
+                                "@Type": "Section"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.BtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.Led1On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.Led2On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.Led3On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.HmFpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.FpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "0",
+                                "@Path": "S100_00_Loeschen.Led",
+                                "@Type": "Int"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S100_00_Loeschen.Button",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.BtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.Led1On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.Led2On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.Led3On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.HmFpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.FpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "0",
+                                "@Path": "S200_00_Loeschen.Led",
+                                "@Type": "Int"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S200_00_Loeschen.Button",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.BtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.Led1On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.Led2On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.Led3On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.HmFpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.FpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "0",
+                                "@Path": "S300_00_Loeschen.Led",
+                                "@Type": "Int"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S300_00_Loeschen.Button",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.BtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.Led1On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.Led2On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.Led3On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.HmFpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.FpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "0",
+                                "@Path": "S400_00_Loeschen.Led",
+                                "@Type": "Int"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S400_00_Loeschen.Button",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.BtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.Led1On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.Led2On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.Led3On",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.HmFpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.FpBtnPressed",
+                                "@Type": "Bool"
+                            },
+                            {
+                                "#text": "0",
+                                "@Path": "S500_00_Loeschen.Led",
+                                "@Type": "Int"
+                            },
+                            {
+                                "#text": "FALSE",
+                                "@Path": "S500_00_Loeschen.Button",
+                                "@Type": "Bool"
+                            }
+                        ]
+                    }
+                },
+                "SnapshotDate": {
+                    "#text": "2025-02-03T15:32:18.2614018Z",
+                    "@ReadOnly": "true"
+                },
+                "StructureModified": {
+                    "#text": "2024-08-12T06:15:28.9019344Z",
+                    "@ReadOnly": "true"
+                }
+            }
+        }
+    }
+}
