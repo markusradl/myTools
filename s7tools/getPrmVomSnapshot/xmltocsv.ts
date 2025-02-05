@@ -14,9 +14,11 @@ async function searchSnapshot(jsonObj: any, filePath: string, isFirstFile: boole
     const snapshotValues =
         jsonObj?.Document?.['SW.Blocks.InterfaceSnapshot']?.AttributeList?.Snapshot?.SnapshotValues
             ?.Value
+    console.log('SnapshotValues:', snapshotValues)
     if (snapshotValues) {
         const csvRows = isFirstFile ? [['DB', 'Variable', 'Wert', 'Datentyp']] : []
-        for (const value of snapshotValues) {
+        const s = Array.isArray(snapshotValues) ? snapshotValues : [snapshotValues]
+        for (const value of s) {
             if (
                 value['#text'] &&
                 (!filePath.toLowerCase().includes('.idb') ||
