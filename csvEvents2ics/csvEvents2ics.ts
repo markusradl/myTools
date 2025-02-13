@@ -17,9 +17,20 @@ async function generateICS(
     for await (const row of csv) {
         const title = row['Bezeichnung'] as string
         const dateString = row['Datum'] as string
+        const startTimeFraction = (row['StartZeit'] as number) || 0
+        const endTimeFraction = (row['EndZeit'] as number) || 0
         const [day, month, year] = dateString.split('.').map(Number)
         const startDate = new Date(year, month - 1, day)
-        const endDate = startDate
+        const endDate = new Date(year, month - 1, day)
+
+        const startHours = Math.floor(24 * startTimeFraction)
+        const startMinutes = Math.round((24 * startTimeFraction - startHours) * 60)
+        startDate.setHours(startHours, startMinutes)
+
+        const endHours = Math.floor(24 * endTimeFraction)
+        const endMinutes = Math.round((24 * endTimeFraction - endHours) * 60)
+        endDate.setHours(endHours, endMinutes)
+
         const description = row['Beschreibung'] as string
 
         try {

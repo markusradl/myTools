@@ -1,2 +1,2 @@
-Bezeichnung,Datum,Beschreibung
-Hausmüll,7.1.2025,Abfalltonne hinausstellen
+Datum,StartZeit,EndZeit,Bezeichnung,Beschreibung
+07.03.2025,"14:00:00","22:00:00","TIA IV","TIA IV:  Systemprogrammierung im TIA Portal"
